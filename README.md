@@ -4,7 +4,7 @@
 ### Installation
 Avant de commencer ce workshop vous devez d'abord **installer Docker** en suivant les indications sur le site officiel en [cliquant ici](https://docs.docker.com/engine/install/).
 
-Et Docker Compose en [cliquant ici](https://docs.docker.com/compose/install/other/).
+Et **Docker Compose** en [cliquant ici](https://docs.docker.com/compose/install/other/).
 
 ### Documentation
 [Docker CLI](https://docs.docker.com/engine/reference/run/)         
