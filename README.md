@@ -9,6 +9,7 @@ Et **Docker Compose** en [cliquant ici](https://docs.docker.com/compose/install/
 ### Documentation
 [Docker CLI](https://docs.docker.com/engine/reference/run/)         
 [Docker Image](https://docs.docker.com/engine/reference/builder/)
+[Docker Compose](https://docs.docker.com/compose/compose-file/compose-file-v3/)
 
 ### Exercie 1 - Lancer un conteneur
 Pour ce premier exercice, vous devez **lancer un conteneur Docker avec la CLI** (command line interface).          
