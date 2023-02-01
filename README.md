@@ -5,8 +5,8 @@
 Avant de commencer ce workshop vous devez d'abord **installer Docker** en suivant les indications sur le site officiel en [cliquant ici](https://docs.docker.com/engine/install/).
 
 ### Documentation
-https://docs.docker.com/engine/reference/run/         
-https://docs.docker.com/engine/reference/builder/
+[Docker CLI](https://docs.docker.com/engine/reference/run/)         
+[Docker Image](https://docs.docker.com/engine/reference/builder/)
 
 ### Exercie 1 - Lancer un conteneur
 Pour ce premier exercice, vous devez **lancer un conteneur Docker avec la CLI** (command line interface).          
