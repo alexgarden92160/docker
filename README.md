@@ -67,4 +67,4 @@ Enfin créer un conteneur a partir de l'image que vous avez créer "test" en mod
 Pour tester cet exercice, rendez vous sur un **navigateur** puis sur **localhost:8080**.
 
 ### Exercice 7 - Microservices
-Dans cet exercice, il 
+Dans cet exercice, il faut tout d'abord créer un network avec comme nom "my_network" (avec la CLI).
