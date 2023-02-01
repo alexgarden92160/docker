@@ -5,11 +5,11 @@
 Avant de commencer ce workshop vous devez d'abord **installer Docker** en suivant les indications sur le site officiel en [cliquant ici](https://docs.docker.com/engine/install/).
 
 ### Documentation
-https://docs.docker.com/engine/reference/run/
+https://docs.docker.com/engine/reference/run/         
 https://docs.docker.com/engine/reference/builder/
 
 ### Exercie 1 - Lancer un conteneur
-Pour ce premier exercice, vous devez **lancer un conteneur Docker avec la CLI** (command line interface).
+Pour ce premier exercice, vous devez **lancer un conteneur Docker avec la CLI** (command line interface).          
 **Les caractérisques** que doit avoir le conteneur sont celles-ci :
 
   - La dernière version de l'**image nginx**
@@ -19,7 +19,7 @@ Pour ce premier exercice, vous devez **lancer un conteneur Docker avec la CLI** 
 Pour tester votre exercice, ouvrez un **navigateur** puis rendez-vous sur **localhost:8080**.
 
 ### Exercice 2 - Monter un volume persistant
-Pour ce deuxième exercice, vous devez aussi **lancer un conteneur Docker avec la CLI**.
+Pour ce deuxième exercice, vous devez aussi **lancer un conteneur Docker avec la CLI**.       
 **Les caractéristiques** :
 
   - La dernière version de l'**image nginx**
@@ -33,7 +33,7 @@ Pour tester cet exercice, vous pouvez donc créer votre conteneur, vous rendre s
 Pour ce troisième exercice, vous devez **créer un volume docker** puis lancer un conteneur avec la CLI avec les **même caractéristiques** que l'exercice 2 mais cette fois-ci, vous devez **monter le volume** que vous avez créer sur le répertoire **/usr/share/nginx/html/ du conteneur**.
 
 ### Exercice 4 - Variables d'environnement
-Pour ce quatrième exercice, vous devez **lancer un conteneur Docker avec la CLI**.
+Pour ce quatrième exercice, vous devez **lancer un conteneur Docker avec la CLI**.          
 **Les caractéristiques** :
 
   - La dernière version de l'**image ubuntu**
@@ -53,13 +53,13 @@ Pour tester, même chôse aussi que l'exercice précédent.
 Dans cet exercice, il faudra créer sa propre image Docker en créer un **fichier "Dockerfile"** et avec les **caractéristiques** suivantes :
 
   - A partir de la dernière version de l'**image ubuntu**
-  - Executer apt-get update
-  - Installer nginx
-  - Définir un espace de travail à /var/www/html/
-  - Copier un fichier index.html que vous avez localement créer vers cet espace
-  - Exposer le port 80
-  - Définir un entrypoint "nginx"
-  - Définir des cmd "-g" et "daemon off;"
+  - Executer **apt-get update**
+  - **Installer nginx**
+  - Définir un **espace de travail** à **/var/www/html/**
+  - Copier un fichier **index.html** que vous avez localement créer vers cet espace
+  - **Exposer** le **port 80**
+  - Définir un **entrypoint "nginx"**
+  - Définir des **cmd "-g" et "daemon off;"**
 
 Ensuite il faut que vous contruisiez cette image avec pour nom "test" et version "1.0".
 Enfin créer un conteneur a partir de l'image que vous avez créer "test" en mode détacher et mapper les port 80 du conteneur vers 8080 du host.
@@ -67,3 +67,4 @@ Enfin créer un conteneur a partir de l'image que vous avez créer "test" en mod
 Pour tester cet exercice, rendez vous sur un **navigateur** puis sur **localhost:8080**.
 
 ### Exercice 7 - Microservices
+Dans cet exercice, il 
