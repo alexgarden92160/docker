@@ -4,6 +4,10 @@
 ### Installation
 Avant de commencer ce workshop vous devez d'abord **installer Docker** en suivant les indications sur le site officiel en [cliquant ici](https://docs.docker.com/engine/install/).
 
+### Documentation
+https://docs.docker.com/engine/reference/run/
+https://docs.docker.com/engine/reference/builder/
+
 ### Exercie 1 - Lancer un conteneur
 Pour ce premier exercice, vous devez **lancer un conteneur Docker avec la CLI** (command line interface).
 **Les caractérisques** que doit avoir le conteneur sont celles-ci :
@@ -35,6 +39,7 @@ Pour ce quatrième exercice, vous devez **lancer un conteneur Docker avec la CLI
   - La dernière version de l'**image ubuntu**
   - Un **nom "testenv"**
   - Une variable d'environnement avec comme nom "**MYVARIABLE**" et comme valeur **"123456"**
+  - En mode **interaction et détacher**
 
 Pour tester cet exercice, vous pouvez **executer en interaction bash sur le conteneur** et taper la commande "**env**".
 Celle-ci afficher toutes les variables d'environnement et vous deviez trouver celle que vous venez de créer.
@@ -49,9 +54,16 @@ Dans cet exercice, il faudra créer sa propre image Docker en créer un **fichie
 
   - A partir de la dernière version de l'**image ubuntu**
   - Executer apt-get update
-  - Installer git
+  - Installer nginx
+  - Définir un espace de travail à /var/www/html/
+  - Copier un fichier index.html que vous avez localement créer vers cet espace
+  - Exposer le port 80
+  - Définir un entrypoint "nginx"
+  - Définir des cmd "-g" et "daemon off;"
 
 Ensuite il faut que vous contruisiez cette image avec pour nom "test" et version "1.0".
-Enfin créer un conteneur a partir de l'image que vous avez créer "test".
+Enfin créer un conteneur a partir de l'image que vous avez créer "test" en mode détacher et mapper les port 80 du conteneur vers 8080 du host.
 
-Pour tester cet exercice, **executer en interaction bash sur le conteneur et tester une commande git**.
+Pour tester cet exercice, rendez vous sur un **navigateur** puis sur **localhost:8080**.
+
+### Exercice 7 - Microservices
