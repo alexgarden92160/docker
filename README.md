@@ -68,3 +68,16 @@ Pour tester cet exercice, rendez vous sur un **navigateur** puis sur **localhost
 
 ### Exercice 7 - Microservices
 Dans cet exercice, il faut tout d'abord créer un network avec comme nom "my_network" (avec la CLI).
+Ensuite il faudra créer un **conteneur** en mode détacher avec comme **image redislabs/redismod**,
+comme **nom "redis"** et comme **réseau "my_network"**.
+Après cette étape il faut créer un **Dockerfile** avec ces **caractéristiques**:
+  
+  - L'image de base "node:14.17.3-alpine3.14"
+  - L'espace de travail situer sur /usr/src/app
+  - Copier package.json, package-lock.json et server.js dans cet espace
+  - Executer "npm ci"
+  - Avoir comme entrypoint du conteneur npm et comme argument start
+
+Construisez cette image avec comme nom "web-images" et enfin créer un conteneur en mode détacher avec comme nom "web", comme hostname "conteneur", comme réseau my_network et avec un mapping des ports 5000 du conteneur vers le 80 de l'host.
+
+Testez votre exercice en executant sur un terminal de votre machine "curl localhost" ou en vous rendant sur un navigateur a l'adresse localhost.
