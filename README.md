@@ -83,3 +83,30 @@ Après cette étape il faut créer un **Dockerfile** avec ces **caractéristique
 **Construisez cette image** avec comme **nom "web-images"** et enfin **créer un conteneur** en **mode détacher** avec comme **nom "web"**, comme **hostname "conteneur"**, comme **réseau "my_network"** et avec un **mapping des ports** **5000 du conteneur** vers le **80 de l'host**.
 
 Testez votre exercice en executant sur un terminal de votre machine **"curl localhost"** ou en vous rendant sur un **navigateur a l'adresse localhost**.
+
+### Exercice 8 - Docker-Compose
+Cette fois-ci il vous faut créer un fichier docker-compose.yml avec 2 services et 1 réseau.                                    
+Vous devez reprendre les caractéristiques du précédent exercice.
+
+Testez cette fois-ci votre exercice avec la commande "docker-compose up -d" puis rendez-vous sur le localhost comme pour l'exercice précédent.
+
+### Exercice 9 - Docker-compose 2
+Pour ce dernier exercice vous devez donc avoir :                                         
+2 services                                     
+Le premier service avec pour nom "db"
+  
+  - Se base sur la dernière version de l'image mysql
+  - Monter sur un volume créer avec pour nom "db_data" sur le chemin /var/lib/mysql/ du service
+  - Le conteneur doit toujours redémarrer
+  - Doit avoir 4 variable d'environnement MYSQL_ROOT_PASSWORD, MYSQL_DATABASE, MYSQL_USER et MYSQL_PASSWORD qui ont toutes pour valeur "wordpress"
+  - Doit avoir comme réseau "app_network"
+
+Le deuxième service avec pour nom "web"
+
+  - Se base sur la dernière version de l'image de wordpress
+  - Un mapping de port de 80 du conteneur vers le 80 de l'host
+  - Le conteneur doit toujours redémarrer
+  - Doit avoir comme réseau "app_network"
+  - Doit avoir 4 variables d'environnement WORDPRESS_DB_HOST qui vaut "db", WORDPRESS_DB_USER, WORDPRESS_DB_PASSWORD, WORDPRESS_DB_NAME qui ont toutes pour valeur : "wordpress"
+ 
+ Pour tester -> "docker-compose up -d" puis rendez-vous sur localhost dans un navigateur pour créer votre site !
